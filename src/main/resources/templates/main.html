@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p th:text="|${name}님 환영합니다!|"/>
+  <button class="btn btn-primary" th:onclick="|location.href = '@{/logout}'|">로그아웃</button>
+  <button class="btn btn-primary" th:onclick="|location.href = '@{/admin}'|">관리자만 클릭 가능</button>
+  <button class="btn btn-primary" th:onclick="|location.href = '@{/user}'|">유저 클릭 가능</button>
+</body>
+</html>
